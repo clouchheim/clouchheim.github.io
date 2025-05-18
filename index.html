@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carter Louchheim</title>
+    <link rel="shortcut icon" href="img/favicon_io/favicon-32x32.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      
+
+      .modal {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+      }
+      .modal.hidden {
+        display: none;
+      }
+      .modal-content {
+        background: white;
+        padding: 2rem;
+        max-width: 600px;
+        width: 90%;
+        border-radius: 8px;
+        position: relative;
+        text-align: center;
+      }
+      .modal-content img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+      }
+      .close-button {
+        position: absolute;
+        top: 10px; right: 15px;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <a
+            href="#home"
+            class="logo"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            >C.Louchheim</a
+          >
+          <nav id="nav" class="nav">
+            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">My Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-btn">
+              <img
+                id="nav-btn-img"
+                src="img/icons/open.svg"
+                alt="Navigation button"
+              />
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container container-lg">
+        <div
+          class="hero-row"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <div class="hero-content">
+            <span class="hero-greeting"> Hello, I am</span>
+            <h1 class="hero-heading">Carter Louchheim</h1>
+            <span class="hero-heading-subtitle"
+              >Computer Science and Cognitive Science - Williams College '25</span
+            >
+            <div class="about-social-list">
+              <div class="social-links-row">
+                <a href="https://github.com/clouchheim" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="img/social_icons/github.svg"
+                    alt="Link to GitHub account"
+                  />
+                </a>
+
+                <a href="https://www.linkedin.com/in/carter-louchheim-6b6217241/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    src="img/social_icons/linkedin.svg"
+                    alt="Link to linkedin profile"
+                  />
+                </a>
+
+                <a href="#!">
+                  <img
+                    src="img/social_icons/instagram.svg"
+                    alt="Link to instagram profile"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <a href="#projects" class="btn">My Projects</a>
+              <a href="#contact" class="btn btn-white">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              src="img/hero/hero.png"
+              alt="Picture of Carter Louchheim"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">About Me</h2>
+        </div>
+        <div class="about-row">
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p class="about-descr">
+              Hi, I’m Carter Louchheim, a computer science major at Williams College with a passion for
+              blending technology, linguistics, and the outdoors into meaningful projects. Growing up in
+              the mountains of Utah, I developed a deep love for skiing and the outdoors, competing as an
+              alpine ski racer while learning the value of discipline, perseverance, and teamwork. This connection
+              to the natural world fuels my drive to create tech-driven solutions that intersect with real-world
+              challenges, such as predicting avalanche conditions or analyzing sports performance data. Academically
+              and professionally, I specialize in software engineering, data science, and natural language processing
+              (NLP), with a particular interest in low-resource languages. My recent thesis project focuses on building
+              neural machine translation systems to preserve and translate low-resrouce languages. Whether
+              I’m coding an ML model, designing an intuitive data visualization tool, or collaborating with
+              stakeholders, I aim to bring curiosity, creativity, and problem-solving to everything I do. Outside of
+              my technical work, you’ll find me exploring the mountains, or seeking new outdoor
+              adventures. I believe the combination of a love for nature and a passion for technology can lead to
+              solutions that are not only innovative but also impactful. <br /><br />Let’s collaborate and bring your
+              vision to life!
+            </p>
+            <div class="about-download-btn">
+              <a href="My_resume.pdf" class="btn btn-white">Download Resume</a>
+            </div>
+          </div>
+          <div
+            class="about-skills"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="skill">
+              <div class="skill-title">Data Analysis</div>
+              <div class="skill-percent">95%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Web Design</div>
+              <div class="skill-percent">75%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="75"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">HTML/CSS</div>
+              <div class="skill-percent">70%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="70"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">JavaScript</div>
+              <div class="skill-percent">60%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-row">
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <img class="service-card-img" src="img/services/01.svg" alt="" />
+            <h3 class="service-card-title">UI/UX Design</h3>
+            <p>
+              Crafting intuitive and appealing UIs that
+              enhance experiences through thoughtful, creative, 
+              and accessible design.
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img class="service-card-img" src="img/services/02.svg" alt="" />
+            <h3 class="service-card-title">Frontend Development</h3>
+            <p>
+              Developing responsive, accessible, and dynamic websites using
+              modern tools to create seamless, engaging experiences.
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img class="service-card-img" src="img/services/04.png" alt="" />
+            <h3 class="service-card-title">Data Analysis</h3>
+            <p>
+              Creating compelling and impact forward data analysis that effectively 
+              communicates data for change. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container container-lg">
+        <div class="projects-title">
+          <h2 class="title">My Projects</h2>
+        </div>
+
+        <div class="projects-row">
+
+          <!-- Project 1 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+            data-project="1"
+            style="cursor:pointer;"
+          >
+            <img class="project-img" src="img/works/01.jpeg" alt="Project 1" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Eph Patient Portal Redesign</h5>
+                <p class="white">UI/UX Design</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+            data-project="2"
+            style="cursor:pointer;"
+          >
+            <img class="project-img" src="img/works/02.jpeg" alt="Project 2" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Book Catalog Website Redesign</h5>
+                <p class="white">UI/UX Design, Web Development</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+            data-project="3"
+            style="cursor:pointer;"
+          >
+            <img class="project-img" src="img/works/03.jpeg" alt="Project 3" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Accessibility Audit: Tiktok and Physical/Motor Disabilities</h5>
+                <p class="white">Accessibility Report</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1200"
+            data-aos-duration="1000"
+            data-project="4"
+            style="cursor:pointer;"
+          >
+            <img class="project-img" src="img/works/04.jpeg" alt="Project 4" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Summarizer Browser Extension</h5>
+                <p class="white">UI/UX Design, Web Development</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1500"
+            data-aos-duration="1000"
+            data-project="5"
+            style="cursor:pointer;"
+          >
+            <img class="project-img" src="img/works/05.jpeg" alt="Project 5" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Designing for Interactivity: JewelJet and Hand Gestures</h5>
+                <p class="white">UX Design</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="project-box"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="1800"
+            data-aos-duration="1000"
+            data-project="6"
+            style="cursor:pointer;"
+          >
+            <img class="project-img" src="img/works/06.jpeg" alt="Project 6" />
+            <div class="project-mask">
+              <div class="project-caption">
+                <h5 class="white">Needfinding for WHOOP</h5>
+                <p class="white">Analytical Report</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-title">
+          <h2 class="title">Contact Me</h2>
+        </div>
+        <div class="contact-info" style="text-align: center; font-size: 1.2rem; margin-top: 1rem;">
+          <p>Feel free to reach out via email:</p>
+          <a href="mailto:carter.louchheim@gmail.com" style="color: #007BFF; text-decoration: underline;">
+            carter.louchheim@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2023 Carter Louchheim. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div id="modal-1" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal1-title">
+      <div class="modal-content">
+        <span class="close-button" data-close>&times;</span>
+        <h3 id="modal1-title">Eph Patient Portal Redesign</h3>
+        <img src="img/works/01.jpeg" alt="Eph Patient Portal Redesign" />
+        <p>
+          The project involved redesigning the Eph Patient Portal specifically for first-year students, focusing on mobile usability. The team simplified the interface to reduce clutter, streamlined key tasks such as appointment scheduling and document uploads, and enhanced accessibility. The redesign emphasized clarity and ease of use to improve the overall user experience for new students managing their health information.
+        </p>
+        <a href="https://medium.com/@chl2/designing-for-others-mobile-eph-patient-portal-for-first-years-b136f2462e3c" target="_blank" rel="noopener noreferrer" class="learn-more-btn">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+    <div id="modal-2" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal2-title">
+      <div class="modal-content">
+        <span class="close-button" data-close>&times;</span>
+        <h3 id="modal2-title">Book Catalog Website Redesign</h3>
+        <img src="img/works/02.jpeg" alt="Book Catalog Website Redesign" />
+        <p>
+          This focused on redesigning a book catalog website to enhance navigational ability, information availability, and visual appeal. User tests were conducted to identify pain points, resulting in a more intuitive interface with improved search functionality and categorization. The redesign aimed to provide users with a more efficient and enjoyable browsing experience.
+        </p>
+        <a href="https://amber-swordfish-03f.notion.site/Redesigning-a-Book-Catalog-Website-to-Improve-Navigational-Ability-Information-Availability-and-Vi-1d67755831f680b58b34d2cd63049b83" target="_blank" rel="noopener noreferrer" class="learn-more-btn">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+    <div id="modal-3" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal3-title">
+      <div class="modal-content">
+        <span class="close-button" data-close>&times;</span>
+        <h3 id="modal3-title">Accessibility Audit: TikTok and Physical/Motor Disabilities</h3>
+        <img src="img/works/03.jpeg" alt="Accessibility Audit" />
+        <p>
+          This project involved conducting an accessibility audit of TikTok for users with motor and physical disabilities, utilizing frameworks from Design Justice, first-person testimonies, and accessibility standards. The audit identified barriers such as small touch targets, lack of keyboard navigation, and time-sensitive interactions that hindered usability for users with limited dexterity. Recommendations included implementing customizable interface elements, enhancing keyboard accessibility, and involving disabled users in the design process to create a more inclusive platform.
+        </p>
+        <a href="https://medium.com/@chl2/tiktok-and-motor-physical-disabilities-an-accessibility-audit-c8e17d0c34a9" target="_blank" rel="noopener noreferrer" class="learn-more-btn">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+    <div id="modal-4" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal4-title">
+      <div class="modal-content">
+        <span class="close-button" data-close>&times;</span>
+        <h3 id="modal4-title">Summarizer Browser Extension</h3>
+        <img src="img/works/04.jpeg" alt="Summarizer Browser Extension" />
+        <p>
+          In this project, my team developed a Chrome browser extension that summarizes highlighted text on web pages using a LLM API. We conducted iterative prototyping and user testing to refine features, including customizable summary formats, improved accuracy, and an option to replace original text with the summary while maintaining a clean, minimal interface. User feedback guided key design improvements such as adding usage instructions, enhancing visual design, and balancing feature richness with simplicity to improve overall accessibility and usability.
+        </p>
+        <a href="https://flannel-lavender-875.notion.site/Design-in-Practice-Text-Summarizing-Chrome-Extension-1f375c867c418013ae2cffb6b55eb0b8" target="_blank" rel="noopener noreferrer" class="learn-more-btn">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+    <div id="modal-5" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal5-title">
+      <div class="modal-content">
+        <span class="close-button" data-close>&times;</span>
+        <h3 id="modal5-title">Designing for Interactivity: JewelJet and Hand Gesture Control</h3>
+        <img src="img/works/05.jpeg" alt="JewelJet and Hand Gestures" />
+        <p>
+          This project explored using hand gestures as an alternative control method to improve accessibility in the web game Jewel Jet by leveraging the MediaPipe Gesture Recognizer library. After testing multiple games, Jewel Jet was chosen for its simple mechanics that suited gesture-based input, and my team designed intuitive gestures mapped to game actions. The project demonstrated that gesture controls can enhance gameplay accessibility and provide a more immersive experience without disrupting game flow.
+        </p>
+        <a href="https://medium.com/@ar30_72964/ds3-bdab96443de3" target="_blank" rel="noopener noreferrer" class="learn-more-btn">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+    <div id="modal-6" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal6-title">
+      <div class="modal-content">
+        <span class="close-button" data-close>&times;</span>
+        <h3 id="modal6-title">Needfinding for WHOOP</h3>
+        <img src="img/works/06.jpeg" alt="WHOOP Band" />
+        <p>
+          This analysis examines WHOOP's screenless design and its impact on user interaction, emphasizing the cognitive demands of interpreting complex health metrics through the mobile app. Interviews with three athletes reveal varied usage patterns, highlighting the device's role in long-term training optimization and the importance of mental skill over physical interaction. The study underscores the significance of user-centered design in wearable technology, particularly in balancing data complexity with accessibility.
+        </p>
+        <a href="https://medium.com/@chl2/needfinding-an-analysis-of-whoop-76b9bb5b87b7" target="_blank" rel="noopener noreferrer" class="learn-more-btn">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Modal open or close
+      const projects = document.querySelectorAll(".project-box");
+      const modals = document.querySelectorAll(".modal");
+      const closeButtons = document.querySelectorAll("[data-close]");
+
+      projects.forEach((project) => {
+        project.addEventListener("click", () => {
+          const projectId = project.getAttribute("data-project");
+          const modal = document.getElementById(`modal-${projectId}`);
+          if (modal) {
+            modal.classList.remove("hidden");
+          }
+        });
+      });
+
+      closeButtons.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+          e.target.closest(".modal").classList.add("hidden");
+        });
+      });
+
+      modals.forEach((modal) => {
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.classList.add("hidden");
+          }
+        });
+      });
+
+      // close by oushing esc
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          modals.forEach((modal) => modal.classList.add("hidden"));
+        }
+      });
+    </script>
+  </body>
+</html>
